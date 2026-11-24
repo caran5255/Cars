@@ -1,0 +1,565 @@
+
+/* =========================
+   GENERAL STYLING
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #222;
+}
+
+section {
+    padding: 80px 8%;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background: #111;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.logo span,
+.footer-logo span {
+    color: #e63946;
+}
+
+nav {
+    display: flex;
+    gap: 22px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #e63946;
+}
+
+.header-btn {
+    background: #e63946;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 13px;
+    border-radius: 4px;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    min-height: 620px;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.55),
+            rgba(0,0,0,0.55)
+        ),
+        url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1800")
+        center/cover;
+
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.tagline {
+    color: #ff555f;
+    letter-spacing: 4px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 68px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero-content > p:not(.tagline) {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn {
+    display: inline-block;
+    background: #e63946;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #b91f2c;
+}
+
+.outline {
+    background: transparent;
+    border: 1px solid white;
+    margin-left: 10px;
+}
+
+.outline:hover {
+    background: white;
+    color: #111;
+}
+
+
+/* =========================
+   SECTION HEADINGS
+========================= */
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title p {
+    color: #e63946;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    color: #111;
+}
+
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about {
+    text-align: center;
+    background: #f8f8f8;
+}
+
+.about-text {
+    max-width: 850px;
+    margin: auto;
+    color: #666;
+    line-height: 1.9;
+    font-size: 16px;
+}
+
+
+/* =========================
+   CAR MODELS
+========================= */
+
+.cars {
+    background: #fff;
+}
+
+.car-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.car-card {
+    background: #fff;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+    overflow: hidden;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.car-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.car-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.car-info {
+    padding: 25px;
+}
+
+.car-label {
+    color: #e63946;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.car-info h3 {
+    font-size: 25px;
+    margin: 12px 0;
+}
+
+.car-info p {
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.car-info h4 {
+    font-size: 22px;
+    color: #e63946;
+    margin-bottom: 18px;
+}
+
+.specs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    font-size: 13px;
+}
+
+.car-btn {
+    display: block;
+    background: #111;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 13px;
+    margin-top: 18px;
+    transition: 0.3s;
+}
+
+.car-btn:hover {
+    background: #e63946;
+}
+
+.disclaimer {
+    text-align: center;
+    margin-top: 25px;
+    color: #888;
+    font-size: 12px;
+}
+
+
+/* =========================
+   FEATURES SECTION
+========================= */
+
+.features {
+    background: #111;
+    color: white;
+}
+
+.features .section-title h2 {
+    color: white;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.feature-card {
+    background: #202020;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    background: #e63946;
+    transform: translateY(-6px);
+}
+
+.feature-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    margin-bottom: 12px;
+}
+
+.feature-card p {
+    color: #ccc;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   COMPARISON TABLE
+========================= */
+
+.compare {
+    background: #f8f8f8;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    min-width: 650px;
+}
+
+th, td {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #eee;
+}
+
+th {
+    background: #111;
+    color: white;
+}
+
+td:first-child {
+    font-weight: bold;
+    background: #f2f2f2;
+}
+
+tr:hover td {
+    background: #fff0f0;
+}
+
+
+/* =========================
+   TEST DRIVE FORM
+========================= */
+
+.testdrive {
+    background: #f4f4f4;
+}
+
+.form-container {
+    max-width: 650px;
+    background: white;
+    padding: 35px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.form-container input,
+.form-container select,
+.form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 18px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.form-container input:focus,
+.form-container select:focus,
+.form-container textarea:focus {
+    outline: none;
+    border-color: #e63946;
+}
+
+.form-container button {
+    width: 100%;
+}
+
+
+/* =========================
+   CONTACT SECTION
+========================= */
+
+.contact {
+    background: white;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    text-align: center;
+}
+
+.contact-grid div {
+    background: #f7f7f7;
+    padding: 25px 15px;
+    border-radius: 8px;
+}
+
+.contact-grid h3 {
+    margin-bottom: 12px;
+    font-size: 17px;
+}
+
+.contact-grid p {
+    color: #777;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.map-link {
+    text-align: center;
+    margin-top: 35px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 45px 8% 20px;
+}
+
+.footer-logo {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+footer p {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.copyright {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 1000px) {
+
+    header {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .feature-grid,
+    .contact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        gap: 14px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .header-btn {
+        display: none;
+    }
+
+    .hero {
+        min-height: 500px;
+        background-position: center;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .hero-content > p:not(.tagline) {
+        font-size: 14px;
+    }
+
+    .outline {
+        margin: 12px 0 0;
+    }
+
+    .car-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .car-card img {
+        height: 230px;
+    }
+
+    .feature-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title h2 {
+        font-size: 29px;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+
+    section {
+        padding: 55px 6%;
+    }
+}
